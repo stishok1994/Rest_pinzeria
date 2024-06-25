@@ -1,0 +1,17 @@
+#scrollToTopBtn {
+    display: none;
+    z-index: 99;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .btn-scroll-top {
+    font-size: 32px !important;
+    color: black;
+  }
+  
+  #scrollToTopBtn.show {
+    display: block;
+  }
+  
