@@ -106,7 +106,7 @@ fetchData(myUrl)
             const cardTitle = cardBlock.querySelector('h5');
             if (cardTitle) {
               // Формируем новый URL с текстом тега h5 в качестве параметра
-              const newUrl = `MenuContent.html?title=${encodeURIComponent(cardTitle.textContent)}`;
+              // const newUrl = `MenuContent.html?title=${encodeURIComponent(cardTitle.textContent)}`;
 
               // Переходим на новую страницу
               window.location.href = newUrl;
