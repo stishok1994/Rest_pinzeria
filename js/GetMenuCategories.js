@@ -1,5 +1,5 @@
 // Получаем категории для меню
-const myUrl = 'http://147.45.109.158:8881/api/category'
+const myUrl = 'https://147.45.109.158:8881/api/category'
 
 function fetchData (url) {
     return fetch(url)
