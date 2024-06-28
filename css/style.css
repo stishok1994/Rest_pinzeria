@@ -4,7 +4,8 @@ html, body {
 }
 
 .container {
-    max-width: 1600px;
+    max-width: 1420px;
+    padding: 0 10px;
 }
 
 body {
@@ -69,8 +70,8 @@ body {
     left: 5px;
     bottom: 0;
     z-index: 1;
-    max-width: 150px;
     height: auto;
+    max-width: 100px;
 }
 
 /* Animation */
@@ -114,37 +115,11 @@ body {
     filter: blur(0);
   }
 }
-    /* vegetables */
-    /* .scale-up-center {
-        -webkit-animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-                animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-    }
-
-    @-webkit-keyframes scale-up-center {
-        0% {
-        -webkit-transform: scale(0.0);
-                transform: scale(0.0);
-        }
-        100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-        }
-    }
-    @keyframes scale-up-center {
-        0% {
-        -webkit-transform: scale(0.0);
-                transform: scale(0.0);
-        }
-        100% {
-        -webkit-transform: scale(1);
-                transform: scale(1);
-        }
-    } */
 
   /* Board bottom left */
   .rotate-hor-center {
-	-webkit-animation: rotate-hor-center 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s infinite both;
-	        animation: rotate-hor-center 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s infinite both;
+	-webkit-animation: rotate-hor-center 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s 1 both;
+	        animation: rotate-hor-center 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 0.5s 1 both;
 }
 
  @-webkit-keyframes rotate-hor-center {
@@ -170,8 +145,8 @@ body {
 
   /* Top Board */
   .rotate-vert-center {
-	-webkit-animation: rotate-vert-center 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3s infinite both;
-	        animation: rotate-vert-center 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3s infinite both;
+	-webkit-animation: rotate-vert-center 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3s 1 both;
+	        animation: rotate-vert-center 3s cubic-bezier(0.455, 0.030, 0.515, 0.955) 3s 1 both;
 }
 
  @-webkit-keyframes rotate-vert-center {
@@ -197,8 +172,8 @@ body {
 
   /* pepper */
   .slide-left {
-	-webkit-animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
-	        animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate both;
+	-webkit-animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2 alternate both;
+	        animation: slide-left 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2 alternate both;
 }
 
  @-webkit-keyframes slide-left {
@@ -221,9 +196,7 @@ body {
               transform: translateX(-100px);
     }
   }
-  
-
-  /* animation end */
+    /* animation end */
 
 
 .right-btm-img {
@@ -231,7 +204,7 @@ body {
     right: 5px;
     bottom: 0;
     z-index: 5;
-    max-width: 200px;
+    max-width: 100px;
     height: auto;
 }
 /* /овощи */
@@ -283,7 +256,6 @@ body {
 
 .btm-deliver {
     position: relative;
-    z-index: 5;
 }
 .btm-about {
     position: relative;
@@ -314,21 +286,24 @@ body {
 .btm-reserv-table-nav {
     position: relative;
     z-index: 5;
+    display: flex;
+    justify-content:center;
 }
 
 .btn-main {
-    border-radius: 15px;
+    border-radius: 11px;
     line-height: 1;
     background-color: #DC4234F2;
-    padding: 15px 15px;
+    padding: 10px 10px;
 }
 .btn-header_top {
     width: 230px;
     height: auto;
 }
 .btn-header_bottom {
-    width: 300px;
-    font-size: 22px !important;
+    width: 150px;
+    font-size: 14px;
+    z-index: 10;
 }
 
 /* Card */
@@ -348,7 +323,7 @@ body {
         border-radius: 50px;
         line-height: 1;
         background-color: #DC4234F2;
-        padding: 15px 20px;
+        padding: 5px 15px;
     }
     .cardLogo {
         padding-right: 15px;
@@ -357,8 +332,7 @@ body {
     }
     .cardValue {
         font-family: "Merriweather", serif;
-        font-style: normal;
-        font-size: 24px;
+        font-size: 15px;
         font-weight: 400;
         text-decoration: none;
         color: #fdfbfb;
@@ -377,15 +351,11 @@ body {
 
  /* Название */
  .name1 {
-    font-size: 46px;
-    width: 500;
     color: #060606;
     margin-bottom: 9px;
     line-height: 1;
  }
  .name2 {
-    font-size: 70px;
-    width: 700;
     text-transform: uppercase;
     color: #080808;
     padding: 0;
@@ -401,7 +371,7 @@ body {
 .head-btm-img1 {
     position: absolute;
     bottom: 0;
-    z-index: 3;
+    z-index: 5;
     max-width: 45%;
     height: auto;
     left: 50%; /* Выравнивание по центру по горизонтали */
@@ -410,7 +380,7 @@ body {
 .head-btm-img2 {
     position: absolute;
     bottom: 0;
-    z-index: 3;
+    z-index: 5;
     max-width: 25%;
     height: auto;
     left: 50%; /* Выравнивание по центру по горизонтали */
@@ -427,7 +397,9 @@ body {
 .mr-10 {
     margin-right: 10px;
 }
-
+.pt-20 {
+    padding-top: 20px;
+}
 
 /* Фон */
 .backgr-img {
@@ -477,11 +449,6 @@ body {
         text-align: center;
         margin-top: auto, 0;
     }
-    /* правый блок */
-    .slider-right_top {
-        display: flex;
-        justify-content: end;
-    }
     .slider-right_img1 {
         max-width: 50%;
     }
@@ -498,10 +465,11 @@ body {
         text-decoration: none;
         color: #000;
         position: absolute;
-        bottom: 50%;
-        left: 55%;
+        top: 50%;
+        left: 65%;
         transform: translate(-50%, -50%);
         }
+
     
     /* Меню*/
         .menu-title {
@@ -625,59 +593,134 @@ body {
         font-size: 14px;
         font-weight: 400;
       }
-    
 
 
-    
-
-
+      .header-bottom {
+        z-index: 10;
+      }
+      .navbar-text {
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .nav-btn button {
+        font-size: 12px;
+        font-weight: 400;
+    }
+ .menu-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+ }
 
 
 
 /* Для различной ширины и высоты экрана */
 
       /* Style for font size */
+
       @media (min-width: 400px) {
-        .navbar-text {
-            font-size: 20px;
-            font-weight: 600;
-        }
-      }
-      @media (min-width: 768px) {
         .navbar-text {
             font-size: 17px;
             font-weight: 600;
         }
+        .slider-right_top {
+            display: none;
+        }
+        .slider-right {
+            margin-top: 20px;
+        }
+        .btn-header_bottom,
+        .btn-header_top,
+        .btn-right-blok
+         {
+            font-size: 12px;
+            font-weight: 300;
+        }
+        .btn-header_top
+         {
+            width: 170px;
+        }
+
       }
+
+      @media (min-width: 768px) {
+        .navbar-text {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .nav-btn {
+            display: none;
+        }
+        .adr-phone,
+        .adr-phone a {
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+            /* правый блок */
+    .slider-right_top {
+        display: flex;
+        justify-content: end;
+    }
+    .slider-right {
+        margin-top: 0px;
+    }
+      }
+
       @media (min-width: 992px) {
         .navbar-text {
-            font-size: 24px;
+            font-size: 20px;
             font-weight: 600;
         }
+        .name1 {
+            font-size: 26px;
+            width: 300;
+         }
+         .name2 {
+            font-size: 40px;
+            width: 500;
+         }
+         .left-btm-img {
+            max-width: 150px;
+        }
+        .right-btm-img {
+            max-width: 150px;
+        }
+        .cardValue {
+            font-size: 20px;
+        }
       }
-      @media (min-width: 1100px) {
+
+      @media (min-width: 1040px) {
         .navbar-text {
             font-size: 24px;
             font-weight: 600;
         }
       }
+
       @media (min-width: 1250px) {
         .navbar-text {
             font-size: 28px;
             font-weight: 600;
         }
+        .adr-phone,
+        .adr-phone a {
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .name1 {
+            font-size: 46px;
+            width: 500;
+        }
+        .name2 {
+            font-size: 70px;
+            width: 700;
+        }
       }
 
-
-    /* Стили для экранов шириной более 768px */
-@media (min-width: 768px) {
-    .nav-btn {
-        display: none;
-    }
-    }
-
     /* Стили для экранов шириной 768px и менее */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     .nav-btn {
       display: block;
     }
@@ -686,33 +729,11 @@ body {
     .adr-phone {
         display: none;
     }
-    .name1 {
-        font-size: 26px;
-        width: 300;
-     }
-     .name2 {
-        font-size: 40px;
-        width: 500;
-     }
-     .btn-header_bottom {
-        width: 180px;
-        font-size: 14px !important;
-        /* height: 40px; */
-     }
   }
 
       /* Стили для экранов шириной 992px и менее */
 @media (max-width: 992px) {
-    .adr-phone,
-    .adr-phone a {
-        font-size: 13px;
-        font-weight: 400;
-    }
-    .btm-reserv-table button,
-    .btm-in-reg button{
-        font-size: 11px;
-        font-weight: 400;
-    }
+
     .slaider-title {
         font-size: 16px;
         font-weight: 400;
@@ -728,7 +749,7 @@ body {
         font-weight: 400;
     }
     .slider-right_img1 {
-        max-width: 20%;
+        max-width: 40%;
     }
     .slider-right_1 {
         max-width: 60%;
@@ -774,18 +795,6 @@ body {
     
   }
 
-   /* Стили для экранов шириной 1100px и менее */
-@media (max-width: 1250px) {
-    .name1 {
-        font-size: 26px;
-        width: 300;
-     }
-     .name2 {
-        font-size: 40px;
-        width: 500;
-     }
-  }
-
   /* Стили для экранов высотой 570px и менее  */
   @media (max-height: 570px) {
     .header-bottom-title {
@@ -798,14 +807,6 @@ body {
     .head-btm-img2 {
         max-height: 25%;
         width: auto;
-    }
-    .left-btm-img {
-        max-width: 15%;
-        height: auto;
-    }
-    .right-btm-img {
-        max-width: 25%;
-        height: auto;
     }
 }
     /* Стили для экранов шириной 992px и более  */
