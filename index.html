@@ -532,7 +532,19 @@
     <!-- Anymation -->
      <script src="js/anymation.js"></script>
 
-
+     <script>
+      const animatedBtnBoard = document.querySelector('.slider-left_img_pizza');
+  
+  const observerBtnBoard = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        animatedBtnBoard.classList.add('rotate-hor-center');
+      } else {
+        animatedBtnBoard.classList.remove('rotate-hor-center');
+      }
+    });
+  });
+     </script>
 
 </body>
 </html>
